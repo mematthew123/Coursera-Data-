@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="week1_basic_data_structures/1_brackets_in_code"/>
+	<classpathentry kind="src" path="week1_basic_data_structures/2_tree_height"/>
+	<classpathentry kind="src" path="week1_basic_data_structures/3_network_simulation"/>
+	<classpathentry kind="src" path="week1_basic_data_structures/4_stack_with_max"/>
+	<classpathentry kind="src" path="week2_priority_queues_and_disjoint_sets/1_make_heap"/>
+	<classpathentry kind="src" path="week2_priority_queues_and_disjoint_sets/2_job_queue"/>
+	<classpathentry kind="src" path="week2_priority_queues_and_disjoint_sets/3_merging_tables"/>
+	<classpathentry kind="src" path="week3_hash_tables/1_phone_book"/>
+	<classpathentry kind="src" path="week3_hash_tables/2_hash_chains"/>
+	<classpathentry kind="src" path="week3_hash_tables/3_hash_substring"/>
+	<classpathentry kind="src" path="week3_hash_tables/4_substring_equality"/>
+	<classpathentry kind="src" path="week3_hash_tables/5_longest_common_substring"/>
+	<classpathentry kind="src" path="week3_hash_tables/6_matching_with_mismatches"/>
+	<classpathentry kind="src" path="week4_binary_search_trees/1_tree_traversals"/>
+	<classpathentry kind="src" path="week4_binary_search_trees/2_is_bst"/>
+	<classpathentry kind="src" path="week4_binary_search_trees/3_is_bst_advanced"/>
+	<classpathentry kind="src" path="week4_binary_search_trees/4_set_range_sum"/>
+	<classpathentry kind="src" path="week4_binary_search_trees/5_rope"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
