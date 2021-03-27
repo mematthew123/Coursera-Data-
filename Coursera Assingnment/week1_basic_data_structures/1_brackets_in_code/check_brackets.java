@@ -28,6 +28,8 @@ class check_brackets {
         InputStreamReader input_stream = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(input_stream);
         String text = reader.readLine();
+		
+		int error_pos = 0;
 
         Stack<Bracket> opening_brackets_stack = new Stack<Bracket>();
         for (int position = 0; position < text.length(); ++position) {
@@ -35,15 +37,34 @@ class check_brackets {
 
             if (next == '(' || next == '[' || next == '{') {
                 // Process opening bracket, write your code here
+				Bracket b = new Bracket(next, position+1);
+				opening_brackets_stack.push(b);
             }
 
             if (next == ')' || next == ']' || next == '}') {
                 // Process closing bracket, write your code here
-            }
+				if(opening_brackets_stack.empty()) {
+					error_pos = position + 1;
+					break;
+				}
+				Bracket top = opening_brackets_stack.pop();
+				if(!top.Match(next)) {
+					error_pos = position + 1;
+					break;
+				}
+			}
         }
 
         // Printing answer, write your code here
+		if(error_pos==0 && opening_brackets_stack.empty())
+			System.out.println("Ya did good, kid.");
+		else {
+			if(error_pos == 0) {
+				while(opening_brackets_stack.size()>1)
+					opening_brackets_stack.pop();
+				error_pos = opening_brackets_stack.peek().position;
+			}
+			System.out.println(error_pos);
+		}
     }
 }
-
-// test commit number one to repo set up 
